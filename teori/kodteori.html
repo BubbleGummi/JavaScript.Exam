@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diana Emanuela Hogescu</title>
+  <meta name="author" content="Diana Emanuela Hogescu">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <h2>Välkommen till kodförståelsen</h2>
+  <section>
+    <article>
+      <h3>Uppgift 1</h3>
+      <pre><code class="javascript">
+            // Tal1 har värdet 10
+            var tal1 = 10;
+            // Tal2 har värdet 20
+            var tal2 = 20;
+            // Om Tal1 är lika med 10 får Tal2 värdet 10
+            if(tal1 == 10)
+            {
+            tal2=tal1;
+            } 
+            // Om Tal2 hade vart större än 10 hade en alert ruta kommit upp med "hej"
+            else if(tal2 >10)
+            {
+            alert("hej");
+            }
+            // Om inget av ovan stämmer så kommer det en alertruta med "hmm" upp
+            else
+            {
+            alert("hmm");
+            tal1=5;
+            }
+            // Om Tal1 är större eller lika med Tal2 eller om Tal2 är lika med 10 kommer en alert-ruta upp med "Glad påsk!"
+            if(tal1 >= tal2 || tal2 ==10 )
+            {
+            alert ("Glad påsk!");
+            }
+            // Om Tal1 är lika med Tal2 kommer en alert-ruta upp med "God jul!"
+            if(tal1 == tal2)
+            {
+            alert ("God jul!");
+            }
+            // Denna utskrift kommer att bli "Glad påsk!" och "God jul!" 
+            </code></pre>
+    </article>
+    <article>
+      <h3>Uppgift 2</h3>
+      <pre><code class="javascript">
+            // Tal1 har värdet 10
+            var tal1 = 10;
+
+            // Tal2 har värdet 20
+            var tal2 = 20;
+
+            // En for-loop som itererar från 0 upp till Tal2 som har värdet 20 men inte inkluderar 20
+            for (var i = 0; i < tal2; i++) { 
+            // Om i är större eller lika med Tal1 och inte lika med 13 kommer en alert-ruta upp med i som innehåll 
+                if (i>= tal1 && i != 13) {
+                alert(i);
+                }
+            }
+            // Loopen kommer att köra "i" från 0 till 19 men kommer hoppa över 13 
+        </code></pre>
+    </article>
+    <article>
+      <h3>Uppgift 3</h3>
+      <pre><code class="javascript">
+            // Funktionen getGrade tar tre argument: studentPoints, minPointsForG och minPointsForVG
+            function getGrade(studentPoints, minPointsForG, minPointsForVG) {
+            // Om studentPoints är mindre än minPointsForG returneras "U"
+            if (studentPoints < minPointsForG) { 
+                return "U" ; 
+            } 
+            // Annars, om studentPoints är mindre än minPointsForVGreturneras "G" 
+            else if (studentPoints < minPointsForVG) { 
+                return "G" ; 
+            } 
+            // Annars returneras "VG" else {
+                return "VG" ; 
+            } 
+            }
+            // Anropar getGrade-funktionen med olika värden och visar resultatet i alert-rutor
+            // Första anropet: "U" eftersom 5 < 11
+            alert(getGrade(5, 11, 16));   
+            // Andra anropet: "G" eftersom 11 < 16
+            alert(getGrade(11, 11, 16));
+            // Tredje anropet: "VG" eftersom 18 >= 16  
+            alert(getGrade(18, 11, 16));  
+
+            // Anropar getGrade-funktionen med värdena 8, 10, 16 och lagrar resultatet i variabeln grade
+            var grade = getGrade(8, 10, 16);
+            
+            // Om grade är "U" visas en alert-ruta om att studenten behöver göra omexamination
+            if (grade == "U") {
+            alert("tyvärr du fick " + grade + " och behöver göra omexamination");
+            }
+            // Utskriften kommer visa U, G, VG, U och en alert-ruta om att studenten behöver göra omexamination
+            </code></pre>
+    </article>
+    <article>
+      <h3>Uppgift 4</h3>
+      <pre><code class="javascript">
+            // En array "jul" skapas med värden: "Sommar", "Snö", "Vår", "Gran"
+            var jul = ["Sommar", "Snö", "Vår", "Gran"];
+            // Elementet på index 4 i arrayen ändras till "Snöängel"
+            jul[4] = "Snöängel";
+            // Ett nytt element "Glögg" läggs till i slutet av arrayen
+            jul.push("Glögg");
+            // Ett till nytt element "Pepparkakshus" läggs till i slutet av arrayen
+            jul.push("Pepparkakshus");
+            // Det första elementet ("Sommar") tas bort från början av arrayen
+            jul.shift();
+            // Det första elementet i arrayen ("Snöängel") visas i en alert-ruta
+            alert(jul[0]);
+            // En loop som visar varje element i arrayen i separata alert-rutor
+            for (var i = 0; i < jul.length; i++) { 
+                alert(jul[i]); 
+            } 
+            // Ett slumpmässigt index genereras och det motsvarande elementet i arrayen visas i en alert-ruta 
+            var slumptal=Math.floor(Math.random() * jul.length); 
+            alert("Slumpade nyckelen till julfriden: " + jul[slumptal]);
+            // Utskriften kommer visa olika alert rutor med "Snöängel", "Vår", "Gran", "Glögg", "Pepparkakshus" och ett slumpat element
+            </code></pre>
+    </article>
+  </section>
+  <section>
+    <article>
+      <h3>Uppgift 5</h3>
+      <p>Under detta projekt har jag fått mer kunskaper om att använda grundläggande JavaScript koncept.
+        Jag har lärt mig om variabler, if-satser, for-loopar, funktioner och arrayer, allt detta tillsammans för att
+        <br>skapa en fungerande kod med logik som kan användas i ett spel. Dessutom har jag fått en bättre förståelse
+        för
+        användningen av HTML5 canvas och hur det används för att rendera spelgrafik och hur man hanterar
+        användarinteraktion med händelselyssnare.
+        <br>Detta projekt har gett mig en bra grund för att fortsätta lära mig mer om JavaScript och hur logiken kan
+        användas för att skapa mer avancerade spel.
+        <br> Strukturen i koden är viktig för att hålla koden lättläst och underhållbar. Jag har lärt mig att använda
+        kommentarer för att förklara vad koden gör och att använda en tydlig namngivning för variabler och funktioner.
+        <br> Det var intressant att lära sig hur man hanterar spelkollisioner och hur man uppdaterar olika speltillstånd
+        som till en början var väldigt trixigt då ingenting ville fungera som det ska.
+        <br> Jag har också lärt mig att använda olika verktyg för att felsöka och testa koden för att hitta och fixa
+        småbuggar som kan uppstå genom att sätta ut breakpoints och console.logs... på lite alltför många platser i
+        koden.
+        <br> Sammanfattningsvis har jag lärt mig mycket under dett projet och jag ser fram emot att fortsätta lära mig
+        mer om JavaScript och utvecklare mina kunskaper för att skapa mer avancerade spel och applikationer i framtiden.
+
+
+      </p>
+    </article>
+  </section>
+
+</body>
+
+</html>

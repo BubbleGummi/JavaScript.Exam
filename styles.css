@@ -1,0 +1,92 @@
+body,
+html {
+    margin: 0;
+    overflow: hidden;
+    background-image: url("game/enemyImages/Backgroundimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#gameCanvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header {
+    color: #333;
+    padding: 10px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+h2 {
+    color: black;
+    border-radius: 10px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+}
+#GameSection {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+button {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+#project {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background-color: rgb(128, 128, 201);
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 15%;
+}
+#assignment {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    color: black;
+    background-color: rgb(128, 128, 201);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 15%;
+}
+#startButton {
+    color: black;
+    background-color: rgb(128, 128, 201);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 15%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+}
+#restart-button {
+    display: block;
+    margin: 20px auto;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
